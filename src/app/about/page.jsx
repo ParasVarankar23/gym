@@ -1,11 +1,11 @@
 'use client'
-import AboutContentSection from "@/components/about/aboutContentSection";
-import BranchesSection from "@/components/about/branchSection";
-import CallToActionSection from "@/components/about/callToActionSection";
-import FeaturesSection from "@/components/about/featureSection";
-import GoalsSection from "@/components/about/goalSection";
+import AboutContentSection from "@/components/about/AboutContentSection";
+import BranchesSection from "@/components/about/BranchSection";
+import CallToActionSection from "@/components/about/CallToActionSection";
+import GoalsSection from "@/components/about/GoalSection";
 import HeroSection from "@/components/about/HeroSection";
-import MissionSection from "@/components/about/missionSection";
+import MissionSection from "@/components/about/MissionSection";
+import FeatureSection from "@/components/home/featureSection";
 import React, { useState, useEffect } from "react";
 
 export default function Home() {
@@ -32,13 +32,13 @@ export default function Home() {
 
     return (
         <div className="min-h-screen bg-white">
-            <HeroSection />
-            <FeaturesSection isVisible={isVisible} />
-            <MissionSection isVisible={isVisible} />
-            <AboutContentSection isVisible={isVisible} />
-            <BranchesSection />
-            <GoalsSection isVisible={isVisible} />
-            <CallToActionSection />
+            <HeroSection/>
+            <FeatureSection isVisible={isVisible}/>
+            <MissionSection isVisible={isVisible}/>
+            <AboutContentSection isVisible={isVisible}/>
+            <BranchesSection/>
+            <GoalsSection isVisible={isVisible}/>
+            <CallToActionSection/>
         </div>
     );
 }
